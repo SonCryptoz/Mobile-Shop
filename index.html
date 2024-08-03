@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/font/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="grid wide">
+                    <nav class="header__navbar hide-on-mobile-tablet">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--clickQR header__navbar-item--bold header__navbar-item--separate">
+                                Sơn Mobile
+                                <!-- header qr code -->
+                                <div class="header__qr">
+                                    <img src="./assets/img/QR.png" alt="QR" class="header__qr-img">
+                                    <div class="header__qr-apps">
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/AppStore.png" alt="AppStore" class="header__qr-downloads-img">
+                                        </a>
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/GGPlay.png" alt="GooglePlay" class="header__qr-downloads-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--separate">
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon far fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-head">
+                                        <h3>Thông báo mới</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://myphamthuanchay.com/data/upload_file/Image/3293/tonerhoadaubiec.jpg" alt="notify" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Mỹ phẩm Herbario chính hãng</span>
+                                                    <span class="header__notify-description">Cung cấp độ ẩm cho da, làm sạch da, loại bỏ tạp chất bụi bẩn và các lớp trang điểm, làm mềm da, se khít lỗ chân lông, giúp ngừa lão hóa da, cho làn da ...</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumb-600x600.jpg" alt="notify" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Đặt mua Galaxy S24 Ultra ngay!</span>
+                                                    <span class="header__notify-description">mẫu điện thoại cao cấp được ra mắt vào đầu năm 2024, sản phẩm tiếp tục kế thừa và cải tiến từ thế hệ trước. Điểm đặc biệt là sử dụng chip Snapdragon 8 Gen 3 for Galaxy, camera 200 MP và tích hợp nhiều tính năng AI.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://cdn.xtmobile.vn/vnt_upload/product/10_2023/thumbs/(600x600)_crop_xiaomi-14-xanh-xtmobile.jpg" alt="notify" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Đặt mua Xiaomi 14 ngay!</span>
+                                                    <span class="header__notify-description">Xiaomi 14 ra mắt với nhiều điểm nhấn ấn tượng, trong đó bao gồm chip Snapdragon 8 Gen 3.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="notify" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Đặt mua Iphone 15 Pro Max ngay!</span>
+                                                    <span class="header__notify-description">Chiếc iPhone mới trong series mới đem đến cho người dùng trải nghiệm ổn định hơn với thế hệ chip A17 Pro mới nhất, cùng công nghệ Wi-Fi 6E. Bộ camera của iPhone 15 Pro Max cũng được nâng cấp thêm với ống kính tele với khả năng zoom quang học 5x với thiết kế tetraprism hiện đại.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1990/posts/107412/image-upload/_0008_1_1.jpg" alt="notify" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Những tính năng mới của Midjourney</span>
+                                                    <span class="header__notify-description">Trong thế giới nghệ thuật đầy màu sắc và sự sáng tạo, MidJourney AI đã nổi lên như một "nhà họa sĩ ảo" đầy tiềm năng</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                    </footer>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-circle-info"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <!-- <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate">
+                                Đăng ký
+                            </li>
+                            <li class="header__navbar-item header__navbar-item--bold">
+                                Đăng nhập
+                            </li> -->
+                            <li class="header__navbar-item header__navbar-user">
+                                <img class="header__navbar-user-img" src="https://yt3.ggpht.com/yti/ANjgQV-wQyXR_NwkvEYULwTAAPvQ4wFlnebYuDFSzKus=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                <ul class="header__navbar-user-menu">
+                                    <span class="header__navbar-user-name">
+                                        <a href="">Sơn Nguyễn</a>
+                                    </span>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Địa chỉ của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đơn mua</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--saperate">
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- header with search -->
+                    <div class="header-with-search ">
+                        <div class="mobile__header-container">
+                            <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                                <i class="fa-solid fa-bars header__mobile-menu-icon"></i>
+                            </label>
+                            <label for="mobile-search-checkbox" class="header__mobile-search">
+                                <i class="fa-solid fa-magnifying-glass header__mobile-search-icon"></i>
+                            </label>
+                        </div>
+                        <div class="header__logo hide-on-tablet">
+                            <a href="#" class="header__logo-link">
+                                <svg class="header__logo-img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M5 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4Zm12 12V5H7v11h10Zm-5 1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12Z" clip-rule="evenodd"/>
+                                </svg>                              
+                            </a>
+                        </div>   
+                        
+                        <!-- checkbox search -->
+                        <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm kiếm điện thoại..."/>
+                                <!-- Search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">
+                                        Lịch sử tìm kiếm
+                                    </h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-list-item">
+                                            <a href="">Iphone 15 Pro Max</a>
+                                        </li>
+                                        <li class="header__search-history-list-item">
+                                            <a href="">Galaxy S24</a>
+                                        </li>
+                                        <li class="header__search-history-list-item">
+                                            <a href="">Mi 14 Ultra</a>
+                                        </li>
+                                        <li class="header__search-history-list-item">
+                                            <a href="">Galaxy S23</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">
+                                    Trong shop
+                                </span>
+                                <i class="header__search-select-icon fas fa-caret-down"></i>
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item--active">
+                                        <span>Trong shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+                        <!-- cart layout -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">
+                                    3
+                                </span>
+                                <!-- no cart: header__cart-list--no-cart -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+                                    <h4 class="header__cart-heading">
+                                        Sản phẩm đã thêm
+                                    </h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.xtmobile.vn/vnt_upload/product/10_2023/thumbs/(600x600)_crop_xiaomi-14-xanh-xtmobile.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Xiaomi 14 
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">14.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Ngọc lục bảo
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumb-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Samsung Galaxy S24 Ultra
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">
+                                                        Iphone 15 Pro Max
+                                                    </h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">37.990.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân loại: Titan Nature
+                                                    </span>
+                                                    <span class="header__cart-item-remove">
+                                                        Xóa
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="header__cart-view-cart btn btn--primary">
+                                        Xem giỏ hàng
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Liên quan</a>
+                    </li>
+                    <li class="header__sort-item header__sort-item--active">
+                        <a href="" class="header__sort-link">Mới nhất</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Bán chạy</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Giá</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="app__container">
+                <div class="grid wide">
+                    <div class="row sm-gutter app__content">
+                        <div class="col l-2 m-0 c-0">
+                            <nav class="category">
+                                <h3 class="category__heading">
+                                    Danh mục
+                                </h3>
+                                <ul class="category-list">
+                                    <li class="category-item category-item--active">
+                                        <a href="#" class="category-item__link">
+                                            Phụ kiện sạc
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">
+                                            Ốp lưng điện thoại
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="category-item__link">
+                                            Pin dự phòng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col l-10 m-12 c-12">
+                            <div class="home-filter hide-on-mobile-tablet">
+                                <span class="home-filter__label">
+                                    Sắp xếp theo
+                                </span>
+                                <button class="btn home-filter__btn ">Phổ biến</button>
+                                <button class="btn btn--primary home-filter__btn ">Mới nhất</button>
+                                <button class="btn home-filter__btn ">Bán chạy</button>
+
+                                <div class="select-input">
+                                    <span class="select-input__label">
+                                        Giá
+                                    </span>
+                                    <i class="select-input__icon fas fa-caret-down"></i>
+                                    <!-- list option -->
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">
+                                                Giá thấp đến cao
+                                            </a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">
+                                                Giá cao đến thấp
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="home-filter__page">
+                                    <span class="home-filter__page-num">
+                                        <span class="home-filter__page-current">
+                                            1
+                                        </span>
+                                        / 14
+                                    </span>
+                                    <div class="home-filter__page-control">
+                                        <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                            <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                        </a>
+                                        <a href="" class="home-filter__page-btn">
+                                            <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mobile category -->
+                             <nav class="mobile-category">
+                                <ul class="mobile-category__list">
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện suka kjdgnfkvnxvndsfkgndsknsdfkgnkn kjgdfnb</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Tiện ích & Thiết bị đa phương tiện</a>
+                                    </li>
+                                </ul>
+                             </nav>
+                            <div class="home-product">
+                                <!-- grid -> row -> column -->
+                                <div class="row sm-gutter">
+                                    <!-- product item -->
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/Mi14.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Xiaomi 14 
+                                                RAM 12GB 
+                                                ROM 512GB 
+                                                Snapdragon 8Gen3
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">17.990.000đ</span>
+                                                <span class="home-product-item__price-current">14.990.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">98 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Xiaomi</span>
+                                                <span class="home-product-item__origin-name">Trung Quốc</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/s24.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Samsung Galaxy S24 Ultra 
+                                                RAM 12GB 
+                                                ROM 512GB 
+                                                Snapdragon 8Gen3
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">39.990.000đ</span>
+                                                <span class="home-product-item__price-current">37.990.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">244 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Samsung</span>
+                                                <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/ip15prm.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Iphone 15 Pro Max
+                                                RAM 12GB 
+                                                ROM 512GB 
+                                                Apple A17 Pro
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">37.990.000đ</span>
+                                                <span class="home-product-item__price-current">33.990.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">612 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Apple</span>
+                                                <span class="home-product-item__origin-name">Hoa Kỳ</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/pxl8pro.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Google Pixel 8 Pro
+                                                RAM 12GB 
+                                                ROM 512GB 
+                                                Snapdragon 8Gen3
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">19.990.000đ</span>
+                                                <span class="home-product-item__price-current">17.990.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">133 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Google</span>
+                                                <span class="home-product-item__origin-name">Hoa Kỳ</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/red12.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Xiaomi Redmi Note 12
+                                                RAM 8GB 
+                                                ROM 128GB 
+                                                Snapdragon 685
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">5.790.000đ</span>
+                                                <span class="home-product-item__price-current">4.290.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">301 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Redmi</span>
+                                                <span class="home-product-item__origin-name">Trung Quốc</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/ip15.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Iphone 15
+                                                RAM 6GB 
+                                                ROM 128GB 
+                                                Apple A16 Bionic
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">22.990.000đ</span>
+                                                <span class="home-product-item__price-current">20.490.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">422 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Apple</span>
+                                                <span class="home-product-item__origin-name">Hoa Kỳ</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">10%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/rea11pro.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Realme 11 Pro
+                                                RAM 8GB 
+                                                ROM 256GB 
+                                                MediaTek Dimensity 7050
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">11.990.000đ</span>
+                                                <span class="home-product-item__price-current">10.990.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">45 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Realme</span>
+                                                <span class="home-product-item__origin-name">Trung Quốc</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">8%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/24plus.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Samsung Galaxy S24 Plus
+                                                RAM 12GB 
+                                                ROM 512GB 
+                                                Exynos 2400
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">30.490.000đ</span>
+                                                <span class="home-product-item__price-current">26.990.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">177 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Samsung</span>
+                                                <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">11%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/reac55.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Realme C55
+                                                RAM 6GB 
+                                                ROM 128GB 
+                                                MediaTek Helio G88
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">4.990.000đ</span>
+                                                <span class="home-product-item__price-current">4.690.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">92 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Realme</span>
+                                                <span class="home-product-item__origin-name">Trung Quốc</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">6%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-2-4 m-4 c-6">
+                                        <a class="home-product-item" href="#">
+                                            <div class="home-product-item__img" style="background-image: url(./assets/img/ip12.png);">
+
+                                            </div>
+                                            <h4 class="home-product-item__name">
+                                                Iphone 12
+                                                RAM 4GB 
+                                                ROM 64GB 
+                                                Apple A14 Bionic
+                                            </h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">14.890.000đ</span>
+                                                <span class="home-product-item__price-current">12.090.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="home-product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="home-product-item__sold">202 đã bán</span>
+                                            </div>
+                                            <div class="home-product-item__origin">
+                                                <span class="home-product-item__brand">Apple</span>
+                                                <span class="home-product-item__origin-name">Hoa Kỳ</span>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span>
+                                                    Yêu thích
+                                                </span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">18%</span>
+                                                <span class="home-product-item__sale-off-label">Giảm</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="pagination home-product__pagination">
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon fas fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item pagination-item--active">
+                                    <a href="" class="pagination-item__link">1</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">2</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">3</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">4</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">5</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">...</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">15</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon fas fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="grid wide footer__content">
+                    <div class="row">
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">
+                                Chăm sóc khách hàng
+                            </h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Trung tâm trợ giúp
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Sơn Mobile Mall
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Hướng dẫn mua hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">
+                                Giới thiệu
+                            </h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Giới thiệu
+                                    </a>
+                                </li>   
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Tuyển dụng
+                                    </a>
+                                </li>   
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Điều khoản
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">
+                                Danh mục
+                            </h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Phụ kiện sạc
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Ốp lưng điện thoại
+                                    </a>
+                                </li>   
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        Pin dự phòng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-4 c-6">
+                            <h3 class="footer__heading">
+                                Theo dõi
+                            </h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="footer-item__icon fab fa-facebook"></i>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="footer-item__icon fab fa-instagram"></i>
+                                        Instagram
+                                    </a>
+                                </li>   
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="footer-item__icon fab fa-linkedin"></i>
+                                        LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2-4 m-8 c-12">
+                            <h3 class="footer__heading">
+                                Vào cửa hàng ứng dụng
+                            </h3>
+                            <div class="footer__download">
+                                <img src="/shop-test/assets/img/QR.png" alt="Download QR" class="footer__download-qr">
+                                <div class="footer__download-app">
+                                    <a href="" class="footer__download-app-link">
+                                        <img src="/shop-test/assets/img/GGPlay.png" alt="Google Play" class="footer__download-app-img">
+                                        <img src="/shop-test/assets/img/AppStore.png" alt="App Store" class="footer__download-app-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="grid wide">
+                        <p class="footer__text">© 2022 - Bản quyền thuộc về Công ty MyCV</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- modal layout chiếm hết màn hình-->
+        <div class="modal">
+            <!-- overlay là lớp phủ mờ -->
+            <div class="modal__overlay"> 
+
+            </div>
+            <div class="modal__body">
+    
+                <!-- Register form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">
+                                Đăng Ký
+                            </h3>
+                            <span class="auth-form__switch-btn">
+                                Đăng Nhập
+                            </span>                  
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Password">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với Son Mobile về
+                                <a href="" class="autho-form__text-link">
+                                    Điều khoản dịch vụ
+                                </a>
+                                &
+                                <a href="" class="autho-form__text-link">
+                                    Chính sách bảo mật
+                                </a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal">
+                                TRỞ LẠI
+                            </button>
+                            <button class="btn btn--primary">
+                                ĐĂNG KÝ
+                            </button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn auth-form__socials--facebook btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-title--white">
+                                Facebook
+                            </span>
+                        </a>
+                        <a href="" class="btn auth-form__socials--google btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title--black">
+                                Google
+                            </span>
+                        </a>
+                    </div>
+                </div> -->
+
+                <!-- Login form -->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">
+                                Đăng Nhập
+                            </h3>
+                            <span class="auth-form__switch-btn">
+                                Đăng Ký
+                            </span>                  
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">
+                                    Quên mật khẩu
+                                </a>
+                                <span class="auth-form__separate">
+
+                                </span>
+                                <a href="" class="auth-form__help-link">
+                                    Trợ giúp?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal">
+                                TRỞ LẠI
+                            </button>
+                            <button class="btn btn--primary">
+                                ĐĂNG NHẬP
+                            </button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="btn auth-form__socials--facebook btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-title--white">
+                                Facebook
+                            </span>
+                        </a>
+                        <a href="" class="btn auth-form__socials--google btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title--black">
+                                Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
